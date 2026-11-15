@@ -229,7 +229,7 @@ Le détail des phases et la répartition des tâches sont dans [docs/feuille-de-
 | Membre | Rôle | Modules |
 |---|---|---|
 | Baya Chaabene | Architecture et garde-fou | `garde_fou/filtre.py`, `llm/moteurs.py`, `tests/` |
-| Mariam Mchaari | Narration et méthode socratique | `analyse/narration.py`, `socratique/` |
+| Mariam Chaari | Narration et méthode socratique | `analyse/narration.py`, `socratique/` |
 | Ghassen Siala | Ingestion et interface | `ingestion/`, `interface/app.py` |
 | Asma Mallek | Éthique et transparence | `transparence/`, `autonomie/regulateur.py`, `docs/ethique.md` |
 
