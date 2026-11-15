@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Environnements virtuels
+.venv/
+venv/
+env/
+
+# Configuration locale (ne jamais publier les clés)
+.env
+
+# Journal local des sessions : il contient des extraits de scénarios
+journal/
+*.jsonl
+
+# Scénarios et rushes des auteurs : ils restent sur leur ordinateur
+scenarios/
+rushes/
+
+# Systèmes et éditeurs
+.DS_Store
+.idea/
+.vscode/

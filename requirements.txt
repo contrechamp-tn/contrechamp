@@ -1,0 +1,20 @@
+# Dépendances prévues. Le projet est en phase de conception : les versions
+# seront fixées au moment du prototype.
+
+# Client HTTP pour parler au serveur Ollama local et, en option, à une API.
+httpx
+# Lecture du fichier .env (choix du moteur, modèle, dossier du journal).
+python-dotenv
+# Lecture des scénarios fournis en PDF.
+pypdf
+# Interface web locale prévue (interface/app.py).
+streamlit
+# Comptage approximatif des tokens de chaque requête (transparence/mesure.py).
+tiktoken
+# Estimation de l'énergie consommée par chaque requête (transparence/mesure.py).
+codecarbon
+# Tests (tests/test_garde_fou.py).
+pytest
+
+# Bonus prévu (ingestion/rushes.py) : transcription des rushes en derja avec
+# FarukSTT. À COMPLÉTER : nom exact du paquet et mode d'installation.

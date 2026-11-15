@@ -1,0 +1,45 @@
+# Exemple : la scène de Leila
+#
+# Leila, 22 ans, écrit son premier court métrage sur sa grand-mère, qui refuse
+# de quitter sa maison. Ce fichier contient une courte scène d'exemple, puis
+# les questions qu'on attend de Contrechamp sur cette scène.
+# Les lignes qui commencent par « # » sont des commentaires.
+# La scène a été écrite seulement pour illustrer le format ; ce n'est pas
+# un extrait d'un vrai scénario.
+
+=== SCÉNARIO ===
+
+INT. MAISON DE JEDDA - SALON - JOUR
+
+Ma grand-mère refuse de quitter sa maison.
+
+Les cartons sont empilés près de la porte. JEDDA est assise sur son matelas, le dos contre le mur.
+
+LEILA
+Jedda, el karhba testanna.
+
+JEDDA
+Khalliha testanna.
+
+=== QUESTIONS ATTENDUES ===
+# Chaque question cite sa page et sa scène. Le format JSON est décrit dans
+# docs/formats.md.
+
+Et si la maison refusait de la laisser partir ?  [page 1, scène 1]
+Qui veut qu'elle parte ?                         [page 1, scène 1]
+Que garde-t-elle ici ?                           [page 1, scène 1]
+
+=== DEMANDE DE L'AUTEUR ===
+
+Écris-la pour moi.
+
+=== RÉPONSE ATTENDUE ===
+# Contrechamp refuse et renvoie une question.
+
+Ce texte est le tien, je ne l'écrirai pas. Mais dis-moi : que voit Jedda quand elle regarde les cartons ?  [page 1, scène 1]
+
+=== RÉPONSES QUE LE GARDE-FOU DOIT BLOQUER ===
+
+JEDDA : Je ne partirai jamais.
+INT. MAISON DE JEDDA - CUISINE - NUIT
+Jedda se lève et range les cartons un par un.
