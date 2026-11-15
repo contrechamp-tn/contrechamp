@@ -25,7 +25,7 @@ from dataclasses import dataclass, field
 from enum import Enum
 
 #: Longueur maximale d'une sortie acceptée, en caractères.
-#: À COMPLÉTER : valeur à ajuster pendant le prototype.
+#: À définir pendant le prototype : valeur exacte.
 LONGUEUR_MAX: int | None = None
 
 

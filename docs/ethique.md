@@ -61,7 +61,7 @@ Contrechamp s'adresse à de jeunes auteurs qui écrivent souvent seuls et sans f
 - Contrechamp lit la derja en lettres latines, le français et l'arabe, et le mélange des trois. Il répond dans la langue de l'auteur et ne corrige jamais sa langue.
 - L'analyse connaît plusieurs structures, dont celle du conte tunisien, et ne juge pas un récit selon un seul modèle.
 - La méthode elle-même vient d'une pratique tunisienne : la grand-mère de Leila qui demandait « Et après ? » au lieu de donner la suite.
-- À COMPLÉTER : sources et personnes consultées sur la structure du conte tunisien.
+- À définir pendant le prototype : sources et personnes consultées sur la structure du conte tunisien.
 - À décider pendant le prototype : choix d'un modèle qui comprend bien la derja, après essais.
 
 **Module.** `analyse/narration.py` (`ModeleStructure.CONTE_TUNISIEN`), avec `ingestion/scenario.py` (détection des langues).

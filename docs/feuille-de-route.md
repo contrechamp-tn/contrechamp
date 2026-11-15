@@ -1,6 +1,6 @@
 # Feuille de route
 
-> Statut actuel : **phase 1, conception**. Aucune date n'est fixée au-delà de cette phase. À COMPLÉTER : calendrier des phases suivantes.
+> Statut actuel : **phase 1, conception**. Aucune date n'est fixée au-delà de cette phase. À définir pendant le prototype : calendrier des phases suivantes.
 
 ## Les phases
 
@@ -22,8 +22,7 @@
 
 ### Phase 3 : test avec de jeunes cinéastes
 
-- Rencontrer de jeunes cinéastes, surtout hors de Tunis, pour vérifier le problème.
-- Sessions avec de jeunes cinéastes tunisiens, en particulier hors de Tunis. À COMPLÉTER : partenaires, lieux et nombre de participants.
+- Rencontrer de jeunes cinéastes, surtout hors de Tunis, pour vérifier le problème : partenaires, lieux et nombre de participants à définir.
 - Analyse narrative complète, dont la structure du conte tunisien (`analyse/narration.py`).
 - Régulateur d'autonomie, réglé à partir des sessions (`autonomie/regulateur.py`).
 - Ajustement du garde-fou sur les sorties réelles.

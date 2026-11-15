@@ -80,7 +80,7 @@ def test_accepte_deux_points_dans_une_question() -> None:
 def test_accepte_citation_courte_du_scenario() -> None:
     """Citer un mot de l'auteur entre guillemets n'est pas écrire un dialogue.
 
-    À COMPLÉTER : règle exacte à fixer (longueur maximale d'une citation,
+    À définir pendant le prototype : règle exacte à fixer (longueur maximale d'une citation,
     obligation qu'elle figure déjà dans la scène de l'auteur).
     """
     assert verifier("Pourquoi Jedda dit-elle « khalliha » ?").accepte

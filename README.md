@@ -56,6 +56,16 @@ Nous n'avons pas encore mené d'enquête de terrain. Le projet est né d'une ins
 
 Contrechamp ne donne pas de réponses : il pose des questions. Comme Socrate, il part de ce que l'auteur a déjà écrit et l'aide à trouver lui-même ce qui manque. Chaque question est courte, s'appuie sur un passage précis du scénario, et l'auteur reste libre de l'ignorer.
 
+#### Un exemple
+
+Sur la scène *« Ma grand-mère refuse de quitter sa maison »*, Contrechamp demande :
+
+- Et si la maison refusait de la laisser partir ? `[page 1, scène 1]`
+- Qui veut qu'elle parte ? `[page 1, scène 1]`
+- Que garde-t-elle ici ? `[page 1, scène 1]`
+
+Si l'auteur demande *« Écris-la pour moi »*, Contrechamp refuse et renvoie une question. L'exemple complet est dans [`exemples/leila.txt`](exemples/leila.txt).
+
 ---
 
 ## La place de l'IA
