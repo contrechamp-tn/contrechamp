@@ -39,7 +39,15 @@ Les IA actuelles ne comblent pas ce manque : elles écrivent à leur place. L'au
 
 **Qui est concerné :** les jeunes auteurs et autrices de premiers films (courts métrages surtout), autodidactes, éloignés des écoles et des réseaux du cinéma, qui écrivent en derja, en français ou en arabe.
 
+### Les sources
+
+- « Itinéraire du réalisateur prometteur Jaleleddine Faizi – Du vécu à l'écran » (septembre 2025) : sans études de cinéma, il remporte le prix du meilleur film indépendant au 38e FIFAK, mais « le volet technique était loin de la perfection ». https://fr.allafrica.com/stories/202509150334.html
+- Kapitalis, « Minute Cinéma : Pour que la pratique cinématographique soit accessible auprès des jeunes » : la formation au scénario et à la réalisation passe par des ateliers ponctuels dans les maisons de culture des régions. https://kapitalis.com/tunisie/?p=358158
+- L'Économiste Maghrébin, « Hammamet abrite la 2e édition de la résidence d'écriture Kitabet » (2024) : l'accompagnement à l'écriture de scénario existe surtout sous forme de résidences, rares et sélectives. https://www.leconomistemaghrebin.com/2024/09/02/kitabet-hammamet-2eme-edition-residence-ecriture-kitabet-2024/
+
 ### Comment nous avons détecté le problème
+
+Nous sommes partis de la presse culturelle tunisienne : le parcours de Jaleleddine Faizi, primé au FIFAK sans études de cinéma, puis les articles sur la formation des jeunes cinéastes, qui montrent que l'aide à l'écriture passe surtout par des ateliers ponctuels et des résidences sélectives.
 
 ---
 
