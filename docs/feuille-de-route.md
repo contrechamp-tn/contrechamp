@@ -22,6 +22,7 @@
 
 ### Phase 3 : test avec de jeunes cinéastes
 
+- Rencontrer de jeunes cinéastes, surtout hors de Tunis, pour vérifier le problème.
 - Sessions avec de jeunes cinéastes tunisiens, en particulier hors de Tunis. À COMPLÉTER : partenaires, lieux et nombre de participants.
 - Analyse narrative complète, dont la structure du conte tunisien (`analyse/narration.py`).
 - Régulateur d'autonomie, réglé à partir des sessions (`autonomie/regulateur.py`).

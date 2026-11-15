@@ -47,7 +47,7 @@ Les IA actuelles ne comblent pas ce manque : elles écrivent à leur place. L'au
 
 ### Comment nous avons détecté le problème
 
-Nous sommes partis de la presse culturelle tunisienne : le parcours de Jaleleddine Faizi, primé au FIFAK sans études de cinéma, puis les articles sur la formation des jeunes cinéastes, qui montrent que l'aide à l'écriture passe surtout par des ateliers ponctuels et des résidences sélectives.
+Nous n'avons pas encore mené d'enquête de terrain. Le projet est né d'une inspiration : le parcours de Jaleleddine Faizi, primé au FIFAK sans études de cinéma, mais dont « le volet technique était loin de la perfection ». Les articles sur la formation des jeunes cinéastes nous ont ensuite montré que l'aide à l'écriture passe surtout par des ateliers ponctuels et des résidences sélectives. Rencontrer de jeunes cinéastes, surtout hors de Tunis, est la première étape de notre feuille de route : c'est là que nous vérifierons le problème.
 
 ---
 
