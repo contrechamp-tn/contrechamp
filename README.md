@@ -57,32 +57,6 @@ Nous n'avons pas encore mené d'enquête de terrain. Le projet est né d'une ins
 
 Contrechamp ne donne pas de réponses : il pose des questions. Comme Socrate, il part de ce que l'auteur a déjà écrit et l'aide à trouver lui-même ce qui manque. Chaque question est courte, s'appuie sur un passage précis du scénario, et l'auteur reste libre de l'ignorer.
 
-### L'histoire de Leila
-
-Leila a 22 ans. Elle écrit son premier court métrage sur sa grand-mère, qui refuse de quitter sa maison.
-
-Quand Leila était petite, sa grand-mère ne lui donnait jamais la suite des histoires. Elle demandait : **« Et après ? »**. C'était à Leila de l'inventer.
-
-Contrechamp reprend ce rôle. Il ne raconte pas la suite : il demande « Et après ? ».
-
-### Un exemple concret
-
-Leila envoie sa scène : *« Ma grand-mère refuse de quitter sa maison. »*
-
-Contrechamp répond :
-
-> - Et si la maison refusait de la laisser partir ? `[page 1, scène 1]`
-> - Qui veut qu'elle parte ? `[page 1, scène 1]`
-> - Que garde-t-elle ici ? `[page 1, scène 1]`
-
-Chaque question cite la page et la scène qui l'ont inspirée.
-
-Si Leila demande *« Écris-la pour moi »*, Contrechamp refuse et lui renvoie une question :
-
-> Ce texte est le tien, je ne l'écrirai pas. Mais dis-moi : que voit ta grand-mère quand elle regarde les cartons ? `[page 1, scène 1]`
-
-L'exemple complet se trouve dans [`exemples/leila.txt`](exemples/leila.txt).
-
 ---
 
 ## La place de l'IA
