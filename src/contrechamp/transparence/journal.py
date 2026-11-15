@@ -5,6 +5,10 @@ scène), le moteur utilisé, la décision du garde-fou et la mesure de
 consommation. Le journal permet à l'auteur de savoir d'où vient chaque
 question et de vérifier que Contrechamp n'a jamais écrit à sa place.
 
+Le journal ne contient jamais le texte du scénario, ni celui des sorties
+rejetées par le garde-fou : seulement la page, la scène, la question, le
+moteur, l'heure et la mesure, avec la décision du garde-fou.
+
 Le journal est un fichier JSONL (une ligne JSON par entrée) rangé dans le
 dossier choisi dans .env (``CONTRECHAMP_DOSSIER_JOURNAL``). Il reste sur
 l'ordinateur de l'auteur, qui peut le lire, l'exporter ou l'effacer. Le format
@@ -30,7 +34,8 @@ class EntreeJournal:
         horodatage : date et heure de la question.
         session : identifiant de la session d'écriture.
         question : la question affichée, avec sa page, sa scène et son moteur.
-        verdict : la décision du garde-fou sur la première sortie du modèle.
+        verdict : la décision du garde-fou sur la première sortie du modèle
+            (accepté ou non, et motifs ; jamais le texte rejeté).
         tentatives : nombre de générations nécessaires (1 si acceptée d'emblée).
         secours : True si la question affichée est une question de secours.
         mesure : la consommation cumulée des tentatives.

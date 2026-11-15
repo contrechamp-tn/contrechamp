@@ -19,7 +19,7 @@ env/
 # Configuration locale (ne jamais publier les clés)
 .env
 
-# Journal local des sessions : il contient des extraits de scénarios
+# Journal local des sessions : il reste sur l'ordinateur de l'auteur
 journal/
 *.jsonl
 

@@ -37,16 +37,16 @@
 
 | Tâche | Module | Responsable |
 |---|---|---|
-| Découpage en pages et en scènes | `ingestion/scenario.py` | À COMPLÉTER |
-| Transcription des rushes (bonus) | `ingestion/rushes.py` | À COMPLÉTER |
-| Analyse narrative et conte tunisien | `analyse/narration.py` | À COMPLÉTER |
-| Génération des questions | `socratique/questions.py` | À COMPLÉTER |
-| Prompt système | `socratique/prompts/systeme.md` | À COMPLÉTER |
-| Filtre du garde-fou et ses tests | `garde_fou/filtre.py`, `tests/test_garde_fou.py` | À COMPLÉTER |
-| Régulateur d'autonomie | `autonomie/regulateur.py` | À COMPLÉTER |
-| Journal | `transparence/journal.py` | À COMPLÉTER |
-| Mesure de la consommation | `transparence/mesure.py` | À COMPLÉTER |
-| Moteurs local et API | `llm/moteurs.py` | À COMPLÉTER |
-| Interface web | `interface/app.py` | À COMPLÉTER |
-| Sessions de test avec de jeunes cinéastes | — | À COMPLÉTER |
-| Documentation | `docs/`, `README.md` | À COMPLÉTER |
+| Découpage en pages et en scènes | `ingestion/scenario.py` | L'équipe |
+| Transcription des rushes (bonus) | `ingestion/rushes.py` | L'équipe |
+| Analyse narrative et conte tunisien | `analyse/narration.py` | L'équipe |
+| Génération des questions | `socratique/questions.py` | L'équipe |
+| Prompt système | `socratique/prompts/systeme.md` | L'équipe |
+| Filtre du garde-fou et ses tests | `garde_fou/filtre.py`, `tests/test_garde_fou.py` | L'équipe |
+| Régulateur d'autonomie | `autonomie/regulateur.py` | L'équipe |
+| Journal | `transparence/journal.py` | L'équipe |
+| Mesure de la consommation | `transparence/mesure.py` | L'équipe |
+| Moteurs local et API | `llm/moteurs.py` | L'équipe |
+| Interface web | `interface/app.py` | L'équipe |
+| Sessions de test avec de jeunes cinéastes | — | L'équipe |
+| Documentation | `docs/`, `README.md` | L'équipe |

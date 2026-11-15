@@ -19,7 +19,7 @@ flowchart LR
 ```
 
 1. **Le prompt système** (`src/contrechamp/socratique/prompts/systeme.md`). Il donne au modèle une seule consigne : poser des questions courtes, chacune liée à sa page et à sa scène, et ne jamais écrire de dialogue, de scène ou de description. Il prévoit aussi le refus de la demande « Écris-la pour moi ».
-2. **Le filtre** (`src/contrechamp/garde_fou/filtre.py`). Il relit chaque sortie avant qu'elle n'atteigne l'auteur. Il est fait de règles simples et ne fait **pas** appel au modèle : on ne demande pas à celui qui pourrait désobéir de juger sa propre désobéissance. Si la sortie est rejetée, `socratique/questions.py` régénère ; après `MAX_TENTATIVES` échecs, il affiche une question de secours écrite à l'avance. Chaque verdict est noté dans le journal.
+2. **Le filtre** (`src/contrechamp/garde_fou/filtre.py`). Il relit chaque sortie avant qu'elle n'atteigne l'auteur. Il est fait de règles simples et ne fait **pas** appel au modèle : on ne demande pas à celui qui pourrait désobéir de juger sa propre désobéissance. Si la sortie est rejetée, `socratique/questions.py` régénère ; après `MAX_TENTATIVES` échecs, il affiche une question de secours écrite à l'avance. Chaque verdict (accepté ou non, et ses motifs) est noté dans le journal, sans le texte rejeté.
 
 ## Les règles du filtre
 
@@ -29,7 +29,7 @@ flowchart LR
 | Dialogue entre guillemets | `DIALOGUE_GUILLEMETS` | Une phrase entre guillemets (« », " ", “ ”) qu'un personnage pourrait dire. |
 | En-tête de scène | `EN_TETE` | Une ligne qui commence par `INT.`, `EXT.` ou `INT./EXT.`. |
 | Description | `DESCRIPTION` | Une phrase affirmative qui raconte ce que fait un personnage ou ce qu'on voit (« Leila entre dans la cuisine. »). |
-| Sortie trop longue | `TROP_LONGUE` | Une sortie qui dépasse `LONGUEUR_MAX`. À COMPLÉTER : valeur à fixer pendant le prototype. |
+| Sortie trop longue | `TROP_LONGUE` | Une sortie qui dépasse `LONGUEUR_MAX`. À décider pendant le prototype : valeur de cette longueur. |
 | Pas une question | `PAS_UNE_QUESTION` | Une sortie qui ne contient aucune question (un verdict, un conseil, un résumé). |
 
 Une sortie est bloquée dès qu'**une seule** règle est enfreinte, même si elle contient aussi une bonne question.
@@ -63,6 +63,6 @@ Une sortie est bloquée dès qu'**une seule** règle est enfreinte, même si ell
 
 ### Cas limites à trancher
 
-- **Citer l'auteur.** Une question peut vouloir citer un mot déjà écrit par l'auteur : « Pourquoi Jedda dit-elle « khalliha » ? ». Ce n'est pas écrire un dialogue. À COMPLÉTER : règle exacte (longueur maximale de la citation, obligation qu'elle figure déjà dans la scène).
-- **Derja et arabe.** Les règles doivent fonctionner sur la derja en lettres latines et sur l'arabe, où les capitales et les guillemets ne s'utilisent pas toujours de la même façon. À COMPLÉTER : cas de test en derja et en arabe, avec l'aide de locuteurs.
-- **Description déguisée en question.** « Et si Leila entrait dans la cuisine, posait les clés et disait qu'elle ne partira jamais ? » est une question qui contient une scène. À COMPLÉTER : critère pour la repérer (longueur, nombre d'actions décrites).
+- **Citer l'auteur.** Une question peut vouloir citer un mot déjà écrit par l'auteur : « Pourquoi Jedda dit-elle « khalliha » ? ». Ce n'est pas écrire un dialogue. À décider pendant le prototype : règle exacte (longueur maximale de la citation, obligation qu'elle figure déjà dans la scène).
+- **Derja et arabe.** Les règles doivent fonctionner sur la derja en lettres latines et sur l'arabe, où les capitales et les guillemets ne s'utilisent pas toujours de la même façon. À décider pendant le prototype : cas de test en derja et en arabe, avec l'aide de locuteurs.
+- **Description déguisée en question.** « Et si Leila entrait dans la cuisine, posait les clés et disait qu'elle ne partira jamais ? » est une question qui contient une scène. À décider pendant le prototype : critère pour la repérer (longueur, nombre d'actions décrites).

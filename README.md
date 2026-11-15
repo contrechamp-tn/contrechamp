@@ -6,7 +6,7 @@ Contrechamp est une IA socratique pour les jeunes cinéastes tunisiens.
 Elle lit un scénario, en derja écrite en lettres latines ou en français, et pose des questions pour débloquer l'écriture.
 Elle n'écrit jamais une ligne à la place de l'auteur.
 
-> **Projet en phase de conception.** Ce dépôt contient l'architecture, la documentation et le squelette du code. Aucune fonctionnalité n'est encore implémentée : chaque fonction lève `NotImplementedError`. Le statut de chaque brique est indiqué [plus bas](#létat-du-projet).
+> **Phase de conception.** Ce dépôt pose l'architecture, la documentation et le squelette typé du code ; l'implémentation commence avec le prototype (phase 2). Le statut de chaque brique est indiqué [plus bas](#létat-du-projet).
 
 Projet conçu pour le hackathon « IA Éthique 360 » (OIF × Junior Entreprise INSAT).
 
@@ -21,10 +21,11 @@ Projet conçu pour le hackathon « IA Éthique 360 » (OIF × Junior Entreprise 
 5. [La structure du dépôt](#la-structure-du-dépôt)
 6. [Éthique à 360°](#éthique-à-360)
 7. [L'état du projet](#létat-du-projet)
-8. [La feuille de route](#la-feuille-de-route)
-9. [L'équipe et la répartition des tâches](#léquipe-et-la-répartition-des-tâches)
-10. [L'utilisation de l'IA dans ce projet](#lutilisation-de-lia-dans-ce-projet)
-11. [La licence](#la-licence)
+8. [Limites connues](#limites-connues)
+9. [La feuille de route](#la-feuille-de-route)
+10. [L'équipe](#léquipe)
+11. [L'utilisation de l'IA dans ce projet](#lutilisation-de-lia-dans-ce-projet)
+12. [La licence](#la-licence)
 
 ---
 
@@ -38,15 +39,7 @@ Les IA actuelles ne comblent pas ce manque : elles écrivent à leur place. L'au
 
 **Qui est concerné :** les jeunes auteurs et autrices de premiers films (courts métrages surtout), autodidactes, éloignés des écoles et des réseaux du cinéma, qui écrivent en derja, en français ou en arabe.
 
-### Les sources
-
-- *La Presse* (2025), article sur Jaleleddine, primé au FIFAK sans formation en cinéma. Lien : À COMPLÉTER.
-- *Kapitalis*. Titre et lien : À COMPLÉTER.
-- *L'Économiste Maghrébin*. Titre et lien : À COMPLÉTER.
-
 ### Comment nous avons détecté le problème
-
-À COMPLÉTER par l'équipe : travail de terrain mené, personnes rencontrées (jeunes cinéastes, ciné-clubs, festivals, formateurs), ce qu'elles nous ont dit.
 
 ---
 
@@ -195,7 +188,7 @@ pytest
 |---|---|---|---|
 | **Créateurs** | Suivre l'IA sans réfléchir | Elle ne fait que poser des questions, on peut les ignorer, et elles se font plus rares à mesure que l'auteur progresse | `autonomie/regulateur.py` |
 | **Droits** | Vol du scénario | Le scénario reste la propriété de l'auteur et n'est jamais réutilisé | `llm/moteurs.py`, `transparence/journal.py` |
-| **Données** | Fuite des textes | Traitement en local quand c'est possible ; rien n'est gardé ni utilisé pour entraîner un modèle | `llm/moteurs.py` |
+| **Données** | Fuite des textes | Traitement en local quand c'est possible. Le scénario ne quitte pas l'ordinateur de l'auteur et n'entraîne aucun modèle ; le journal local garde les questions, pas le texte, et l'auteur peut l'effacer. | `llm/moteurs.py` |
 | **Cultures et langues** | Une IA qui pense « à la Hollywood » | Derja, français, arabe, et la structure des contes tunisiens | `analyse/narration.py` |
 | **Transparence** | Ne pas savoir d'où vient une question | Chaque question cite sa page et sa scène, et tout est noté dans un journal | `transparence/journal.py` |
 | **Planète** | Consommer trop d'énergie | Du texte seulement, de petits modèles, et une consommation mesurée | `transparence/mesure.py` |
@@ -223,10 +216,19 @@ Le projet est en **phase de conception**. « Conçu » veut dire que le rôle, l
 | Moteurs local et API (`llm/moteurs.py`) | Conçu |
 | Formats de données (scénario, question, journal) | Conçu |
 | Interface web (`interface/app.py`) | Prévu |
+| Lecture des scénarios en écriture arabe | Prévu |
 | Structure du conte tunisien (règles détaillées) | Prévu |
 | Version derja (questions et garde-fou en derja) | Prévu |
 | Transcription des rushes avec FarukSTT (`ingestion/rushes.py`) | Prévu |
 | Tests avec de jeunes cinéastes | Prévu |
+
+---
+
+## Limites connues
+
+- Une question peut orienter l'auteur malgré elle : le régulateur d'autonomie et les tests avec de jeunes cinéastes serviront à le mesurer.
+- Les modèles ouverts comprennent encore mal la derja : la qualité devra être testée avant d'être promise.
+- Le filtre fonctionne par règles : il peut laisser passer une réécriture déguisée, ou bloquer une vraie question. Ses cas de test sont dans [tests/test_garde_fou.py](tests/test_garde_fou.py).
 
 ---
 
@@ -241,12 +243,12 @@ Le détail des phases et la répartition des tâches sont dans [docs/feuille-de-
 
 ---
 
-## L'équipe et la répartition des tâches
+## L'équipe
 
-| Membre | Rôle | Modules |
-|---|---|---|
-| Baya Chaabene | À COMPLÉTER | À COMPLÉTER |
-| À COMPLÉTER | À COMPLÉTER | À COMPLÉTER |
+| Membre | Compte GitHub |
+|---|---|
+| Baya Chaabene | [bayaCh05](https://github.com/bayaCh05) |
+| — | [mariammchaari](https://github.com/mariammchaari) |
 
 ---
 

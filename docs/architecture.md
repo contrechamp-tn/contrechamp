@@ -159,5 +159,5 @@ En mode API :
 
 - l'auteur active le mode lui-même, et l'interface lui demande son accord explicite avant le premier envoi (`ConfigMoteur.accord_auteur`) ;
 - seule la scène en cours et la carte du récit nécessaires à la question sont envoyées, pas le scénario entier ;
-- Contrechamp ne garde rien chez le fournisseur et ne lui demande jamais d'utiliser les textes pour entraîner un modèle. À COMPLÉTER : vérifier les conditions d'utilisation du fournisseur retenu sur ce point ;
+- Contrechamp ne garde rien chez le fournisseur et ne lui demande jamais d'utiliser les textes pour entraîner un modèle. À décider pendant le prototype : choix du fournisseur, après vérification de ses conditions d'utilisation sur ce point ;
 - l'auteur peut retirer son accord à tout moment : Contrechamp repasse alors en local.

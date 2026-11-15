@@ -16,7 +16,7 @@ L'auteur peut aussi coller une scène directement dans l'interface.
 
 **Langues.** Le texte peut être écrit en derja en lettres latines, en français, en arabe, ou dans un mélange des trois. Contrechamp ne corrige jamais la langue de l'auteur.
 
-**Pages.** Les pages sont repérées par les sauts de page du fichier (PDF, caractère de saut de page). À défaut, Contrechamp découpe le texte selon une longueur standard. À COMPLÉTER : longueur retenue pour une page.
+**Pages.** Les pages sont repérées par les sauts de page du fichier (PDF, caractère de saut de page). À défaut, Contrechamp découpe le texte selon une longueur standard. À décider pendant le prototype : longueur retenue pour une page.
 
 **Scènes.** Une scène commence par un en-tête, s'il y en a un :
 
@@ -76,8 +76,7 @@ Chaque ligne correspond à la dataclass `EntreeJournal` (`src/contrechamp/transp
   },
   "verdict": {
     "accepte": true,
-    "motifs": [],
-    "extrait": null
+    "motifs": []
   },
   "tentatives": 2,
   "secours": false,
@@ -99,7 +98,6 @@ Les valeurs de `mesure` sont laissées à `null` dans cet exemple : aucune mesur
 | `question` | objet | La question affichée, au format ci-dessus. |
 | `verdict.accepte` | booléen | Décision du garde-fou sur la **première** sortie du modèle. |
 | `verdict.motifs` | liste de chaînes | Raisons du rejet : `replique`, `dialogue-guillemets`, `en-tete`, `description`, `trop-longue`, `pas-une-question`. |
-| `verdict.extrait` | chaîne ou `null` | Le passage qui a déclenché le rejet. |
 | `tentatives` | entier ≥ 1 | Nombre de générations nécessaires. |
 | `secours` | booléen | `true` si la question affichée est une question de secours. |
 | `mesure.duree_s` | nombre | Durée cumulée des tentatives, en secondes. |
@@ -107,4 +105,4 @@ Les valeurs de `mesure` sont laissées à `null` dans cet exemple : aucune mesur
 | `mesure.tokens_sortie` | entier | Tokens produits par le modèle. |
 | `mesure.energie_wh` | nombre ou `null` | Énergie estimée en wattheures ; `null` si elle n'est pas estimable (mode API). |
 
-Le journal ne contient jamais le scénario complet. L'auteur peut l'exporter ou l'effacer depuis l'interface.
+Le journal ne contient jamais le texte du scénario, ni celui des sorties rejetées par le garde-fou : seulement la page, la scène, la question, le moteur, l'heure et la mesure, avec la décision du garde-fou. L'auteur peut l'exporter ou l'effacer depuis l'interface.

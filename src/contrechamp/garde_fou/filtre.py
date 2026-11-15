@@ -47,12 +47,13 @@ class Verdict:
     Attributs :
         accepte : True si la sortie peut être montrée à l'auteur.
         motifs : les raisons du rejet (vide si acceptée).
-        extrait : le passage qui a déclenché le rejet, pour le journal.
+
+    Le verdict ne garde aucun extrait de la sortie rejetée : celle-ci peut
+    contenir du texte de scénario, qui ne doit jamais entrer dans le journal.
     """
 
     accepte: bool
     motifs: tuple[Motif, ...] = field(default_factory=tuple)
-    extrait: str | None = None
 
 
 def contient_replique(texte: str) -> bool:

@@ -17,4 +17,4 @@ codecarbon
 pytest
 
 # Bonus prévu (ingestion/rushes.py) : transcription des rushes en derja avec
-# FarukSTT. À COMPLÉTER : nom exact du paquet et mode d'installation.
+# FarukSTT. À décider pendant le prototype : nom exact du paquet et mode d'installation.
