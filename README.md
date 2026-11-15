@@ -24,8 +24,7 @@ Projet conçu pour le hackathon « IA Éthique 360 » (OIF × Junior Entreprise 
 8. [Limites connues](#limites-connues)
 9. [La feuille de route](#la-feuille-de-route)
 10. [L'équipe](#léquipe)
-11. [L'utilisation de l'IA dans ce projet](#lutilisation-de-lia-dans-ce-projet)
-12. [La licence](#la-licence)
+11. [La licence](#la-licence)
 
 ---
 
@@ -233,12 +232,6 @@ Le détail des phases et la répartition des tâches sont dans [docs/feuille-de-
 | Mariam Mchaari | Narration et méthode socratique | `analyse/narration.py`, `socratique/` |
 | Ghassen Siala | Ingestion et interface | `ingestion/`, `interface/app.py` |
 | Asma Mallek | Éthique et transparence | `transparence/`, `autonomie/regulateur.py`, `docs/ethique.md` |
-
----
-
-## L'utilisation de l'IA dans ce projet
-
-Par souci de transparence : la structure du dépôt et la documentation ont été rédigées avec l'aide de Claude Code, puis relues par l'équipe.
 
 ---
 
